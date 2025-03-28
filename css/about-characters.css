@@ -1,37 +1,50 @@
 #about-characters {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  #zoe, #mio {
-    width: 45%;
-    position: relative;
-  }
-  
-  #zoe img, #mio img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .divider {
-    position: absolute;
-    left: 50%;
-    top: -10%;
-    width: 20%;
-    height: 120%;
-    transform: translateX(-50%);
-    pointer-events: none;
-  }
-  
-  .divider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    mix-blend-mode: screen; /* Gör bakgrunden transparent på ljusa bakgrunder */
-  }
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 100%;
+  gap: 0;
+  position: relative;
+}
+
+#zoe, #mio {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#zoe img {
+  width: 105%;
+  height: auto;
+  max-height: 50vh;
+  object-fit: cover;
+  margin-right: -10vw; /* Trycker in Zoe i dividern */
+}
+
+#mio img {
+  width: 105%;
+  height: 50vh;
+  object-fit: cover;
+  margin-left: -10vw; /* Trycker in Mio i dividern */
+}
+
+.divider {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 10%;
+  z-index: 3; /* Blixten ligger överst */
+  position: relative;
+}
+
+.divider img {
+  height: 50vh;
+  max-height: 60vh;
+}
+
+article{
+  padding: 1vw 3vw;
+}
