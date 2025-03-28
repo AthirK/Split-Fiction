@@ -9,10 +9,10 @@
     max-width: 100%;
 
     /* Sets the height of panel. */
-    height: 30rem;
+    height: 40rem;
 
     /* Adds a background image to the panel. */
-    background-image: url('https://www.dexerto.com/cdn-image/wp-content/uploads/2025/02/25/Split-Fiction-Easter-Eggs.jpg?width=1200&quality=60&format=auto');
+    background-image: url('https://dotesports.com/wp-content/uploads/2025/03/All-Split-Fiction-bench-locations.jpg');
 
     /* Ensures the background image covers the entire panel. */
     background-size: cover;
@@ -85,7 +85,7 @@
     @media (max-width: 60rem) 
     { 
     /* When the screen is smaller than 60rem */
-    .aboutGame-panel 
+    .gameFeature2-panel 
     {
         /* Stack elements vertically. */
         flex-direction: column;

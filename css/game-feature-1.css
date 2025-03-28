@@ -9,7 +9,7 @@
     max-width: 100%;
 
     /* Sets the height of panel. */
-    height: 30rem;
+    height: 40rem;
 
     /* Adds a background image to the panel. */
     background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/02/split-fiction-hands-on-preview-feb-2025.jpg?q=49&fit=crop&w=1140&h=&dpr=2');
@@ -85,7 +85,7 @@
     @media (max-width: 60rem) 
     { 
     /* When the screen is smaller than 60rem */
-    .aboutGame-panel 
+    .gameFeature1-panel 
     {
         /* Stack elements vertically. */
         flex-direction: column;
