@@ -1,0 +1,34 @@
+#section-nav {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #section-nav a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid black;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Gör första cirkeln ifylld som standard */
+  #section-nav a:first-child {
+    background-color: black;
+  }
+  
+  /* När en sektion är `:target`, hitta motsvarande länk i #section-nav */
+  section:target ~ #section-nav a {
+    background-color: transparent;
+  }
+  
+  /* Markera aktiv sektion */
+  section:target ~ #section-nav a[href*="#"]:has([href*=":target"]) {
+    background-color: black;
+  }
