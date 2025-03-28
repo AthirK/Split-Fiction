@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 #zoe img {
@@ -36,7 +36,7 @@
   align-items: top;
   justify-content: center;
   width: 10%;
-  z-index: 3; /* Blixten ligger överst */
+  z-index: 2; /* Blixten ligger överst */
   position: relative;
 }
 

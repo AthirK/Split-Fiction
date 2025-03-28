@@ -3,6 +3,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 0.2rem 2rem;
+    position: fixed;
 }
 
 nav > div {
@@ -23,13 +24,13 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0.5rem 1rem;
-    /* font-family: TBD ; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav ul li a:hover {
-    outline: 2px solid blue; /* to be white */
+    outline: 2px solid white; /* to be white */
     background-color: transparent;
     border-radius: 8px;
 }

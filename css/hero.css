@@ -1,3 +1,84 @@
+.hero-section {
+    display: flex;
+    direction: row;
+    background-image: url('/images/hero-background.png');
+    background-size: cover;
+    min-height: 80vh;
+    }
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45rem;
+    width:50%;
+    gap: 2rem;
+}
+
+.hero-left > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-left > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
 #img-logo {
-    position: absolute;
+    display: block;
+    margin-left: 9rem;
+    margin-right: auto;
+    padding-top: 6rem;
+}
+
+#mini-intro {
+    color:azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: 10rem;
+}
+
+.hero-right {
+    display: flex;
+    direction: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45rem;
+    width: 50%
+}
+
+.hero-right > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    max-height: 40%;
+}
+
+.hero-right > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    max-height: 60%;
+}
+
+.reviews {
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    width:100%;
+    padding-top: 5rem;
+    padding-left:5rem;
+}
+
+#video-trailer {
+    width: 35rem;
+    height: 20rem;
+    border: none;
+    padding-bottom: 2rem;
 }

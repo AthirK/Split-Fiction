@@ -8,12 +8,28 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/about-characters.css" rel="stylesheet" />
   <link href="css/section-nav.css" rel="stylesheet" />
+  <link href="css/hero.css" rel="stylesheet" />
+  <link href="css/about-game.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/game-feature-1.css">
+  <link rel="stylesheet" href="css/game-feature-2.css">
+  <link rel="stylesheet" href="css/game-feature-3.css">
   <!-- Eventuellt länka till fonts om vi vill importera några ... -->
    <!-- Lisa: hitta icon svgs för Facebook, X & Instagram och importera, placera i navven jämt med länkarna -->
 
 </head>
 
 <body>
+  <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+    <iframe
+      frameborder="0"
+      height="100%"
+      width="100%"
+      src="https://www.youtube.com/embed/SQRfCXJNEH5mKaQk?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1"
+    >
+    </iframe>
+  </div>
+
+  
   <div id="page-wrapper">
     <header>
       <nav>
@@ -32,6 +48,15 @@
               <a href="#">Screenshots and videos</a>
             </li>
           </ul>
+          
+          <div class="social icons">
+            <a href="https://instagram.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
         </div>
     </header>
 
@@ -42,62 +67,42 @@
       <a href="#mio"></a>
     </nav>
     <!--Hero-->
-    <section id="hero-section">
-      <div>
-        <img id="img-background" width="100%" src="/images/hero-background.png" alt="Background">
-        <img id="img-logo" src="/images/Split Fiction - SteamGridDB.png">
+    <section class="hero-section">
+      <div class="hero-left">
         <div>
-          <div>Reviews</div>
-        <img src="">
+          <img id="img-logo" src="/images/Split Fiction - SteamGridDB.png" alt="Logo">
+        </div>
+        <div id="mini-intro">A new action adventure co-op game from Hazelight Studios, the creators of It Takes Two. Launching on March 6th, 2025</div>
       </div>
+      
+      <div class="hero-right"> 
+          <div class="reviews">Reviews</div>
+          <div>
+            <iframe id="video-trailer"
+            src="https://www.youtube.com/embed/fcwngWPXQtg"
+            title="Split Fiction Trailer"
+            allowfullscreen
+            ></iframe>
+          </div>
       </div>
- 
     </section>
 
-    <!-- about game /-->
+    <!-- about game (Main panel) /-->
     <div class="aboutGame-panel">
-      <div class?="inner-panel text-panel">
+
+      <!-- Panel with title and text /-->
+      <div class="text-panel">
         <h2>About the Game</h2>
         <p>placeholder text about the game</p>
       </div>
-      <div class="inner-panel image-panel">
+      
+      <!-- Image pane /-->
+      <div class="image-panel">
         <img
-          src="https://www.dexerto.com/cdn-image/wp-content/uploads/2025/02/25/Split-Fiction-Easter-Eggs.jpg?width=1200&quality=60&format=auto"
+          src="https://assets-prd.ignimgs.com/2025/02/12/split-fiction-1739399170478.jpg"
           alt="Game Preview">
       </div>
     </div>
-
-    <style>
-      .aboutGame-panel 
-      {
-        width: 40rem;
-        height: 20rem;
-        background-image: url('https://cdn.mos.cms.futurecdn.net/8WFviFRyUMjDxGJXeGgGFR-1920-80.jpg.webp');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-
-      .inner-panel
-      {
-        width: 45%;
-        color: white;
-        text-align: center;
-      }
-
-      .image-panel 
-      {
-        width: 45%;
-        height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-      }
-    </style>
-
 
   <!-- about zoe/mio /-->
   <div id="about-characters">
@@ -123,10 +128,67 @@
       </article>
     </section>
   </div>
+
+  <!-- Game feature 1 (Main panel) /-->
+  <div class="gameFeature1-panel">
+
+    <!-- Panel with title and text /-->
+    <div class="text-panel">
+      <h2>Main & side storys </h2>
+      <p>placeholder text</p>
+    </div>
+
+    <!-- Image pane /-->
+    <div class="image-panel">
+      <img
+        src="https://cdn.gracza.pl/i_gp/h/25/472142727.jpg"
+        alt="Game Preview">
+    </div> 
+
+  </div>
+
+  <!-- Game feature 2 (Main panel) /-->
+  <div class="gameFeature2-panel">
+     
+    <!-- Image pane /-->
+    <div class="image-panel">
+      <img
+        src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/12/split-fiction-custom-image.jpg?q=70&fit=crop&w=1140&h=&dpr=1"
+        alt="Game Preview">
+    </div> 
+
+    <!-- Panel with title and text /-->
+    <div class="text-panel">
+      <h2>mini games</h2>
+      <p>placeholder text</p>
+    </div>
+  </div>
+
+  <!-- Game feature 3 (Main panel) /-->
+  <div class="gameFeature3-panel">
+     
+    <!-- Image pane /-->
+    <div class="image-panel">
+      <img
+        src="https://static0.hardcoregamerimages.com/wordpress/wp-content/uploads/2025/03/split-fiction-7.jpg?q=49&fit=crop&w=750&h=422&dpr=2"
+        alt="Game Preview">
+    </div> 
+
+    <!-- Panel with title and text /-->
+    <div class="text-panel">
+      <h2>game feature 3</h2>
+      <p>placeholder text</p>
+    </div>
+  </div>
+
+  <!-- Find us -->
+
   <main>
   </main>
   <footer>
   </footer>
 </body>
+
+
 
 </html>

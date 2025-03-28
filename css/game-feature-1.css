@@ -1,0 +1,105 @@
+
+/* Main panel properties */
+.gameFeature1-panel 
+{
+    /* Sets the width of panel. */
+    width: 100%;
+
+    /* limets how wide it can get. */
+    max-width: 100%;
+
+    /* Sets the height of panel. */
+    height: 30rem;
+
+    /* Adds a background image to the panel. */
+    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/02/split-fiction-hands-on-preview-feb-2025.jpg?q=49&fit=crop&w=1140&h=&dpr=2');
+
+    /* Ensures the background image covers the entire panel. */
+    background-size: cover;
+
+    /* Enables Flexbox to arrange the inner panels side by side. */
+    display: flex;
+
+    /* Spaces the text panel and image panel evenly. */
+    justify-content: space-around;
+
+    /* Aligns the panels vertically in the center. */
+    align-items: center;
+}
+
+/* Text panel properties */
+.text-panel
+{
+    /* Set the width of text panels. */
+    width: 30%;
+
+    /* Set the height of text panels. */
+    height: 60%;
+
+    /* Makes the text color white. */
+    color: white;
+
+    /* Adds a black transparent background. */
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* Rounds the corners. */
+    border-radius: 0.5rem;
+
+    /* Centers the text inside the panel. */
+    text-align: center;
+}
+
+/* Image panel properties */
+.image-panel 
+{
+    /* Set the width of image Panels. */
+    width: 30%;
+
+    /* Set the height of image panels. */
+    height: 60%;
+
+    /* Uses Flexbox to center the image */
+    display: flex;
+
+    /* Centers the image horizontally */
+    justify-content: center;
+
+    /* Centers the image vertically */
+    align-items: center;
+}
+
+/* Image properties */
+.image-panel img 
+{
+    /* Set the image width. */
+    width: 100%;
+
+    /* set the image height. */
+    height: 100%;
+
+    /* Rounds the corners of the image. */
+    border-radius: 0.5rem;
+}
+
+    /* Make the layout responsive */
+    @media (max-width: 60rem) 
+    { 
+    /* When the screen is smaller than 60rem */
+    .aboutGame-panel 
+    {
+        /* Stack elements vertically. */
+        flex-direction: column;
+
+        /* Allow height to adjust. */
+        height: auto;
+
+        /* Add spacing. */
+        padding: 2rem 0;
+    }
+
+    .text-panel, .image-panel 
+    {
+        /* Adjust the panels width for smaller screens. */
+        width: 80%;
+    }
+}
