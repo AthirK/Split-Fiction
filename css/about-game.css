@@ -7,12 +7,12 @@
 
     /* limets how wide it can get. */
     max-width: 100%;
-
     /* Sets the height of panel. */
     height: 40rem;
 
     /* Adds a background image to the panel. */
     background-image: url('https://cdn.mos.cms.futurecdn.net/8WFviFRyUMjDxGJXeGgGFR-1920-80.jpg.webp');
+    mask-image: linear-gradient(to top, transparent, black 2%, black 98%, transparent);
 
     /* Ensures the background image covers the entire panel. */
     background-size: cover;

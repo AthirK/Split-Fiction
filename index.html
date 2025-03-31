@@ -3,7 +3,6 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link href="css/navbar.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/about-characters.css" rel="stylesheet" />
@@ -19,17 +18,14 @@
 </head>
 
 <body>
-  <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-    <iframe
-      frameborder="0"
-      height="100%"
-      width="100%"
-      src="https://www.youtube.com/embed/SQRfCXJNEH5mKaQk?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1"
-    >
-    </iframe>
-  </div>
+<div style="position: fixed; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
+  <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="/images/Split Fiction _ Official Accolades Trailer.mp4" type="video/mp4">
+    <!-- Fallback image if video is not supported -->
+    <img src="/images/wallpaper.jpg" alt="Fallback image" style="width: 100%; height: 100%; object-fit: cover;">
+  </video>
+</div>
 
-  
   <div id="page-wrapper">
     <header>
       <nav>
@@ -85,10 +81,12 @@
             ></iframe>
           </div>
       </div>
+    
     </section>
-
     <!-- about game (Main panel) /-->
     <div class="aboutGame-panel">
+      
+    
 
       <!-- Panel with title and text /-->
       <div class="text-panel">

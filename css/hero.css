@@ -1,9 +1,11 @@
 .hero-section {
     display: flex;
-    direction: row;
+   flex-direction: row;
     background-image: url('/images/hero-background.png');
     background-size: cover;
     min-height: 80vh;
+   
+    z-index: 1;
     }
 
 .hero-left {
