@@ -1,6 +1,6 @@
 #about-characters {
   display: flex;
-  align-items: top;
+  align-items: flex-start;  /* Gör att bilderna är i linje med toppen */
   justify-content: center;
   width: 100%;
   gap: 0;
@@ -8,7 +8,7 @@
 }
 
 #zoe, #mio {
-  width: 50%;
+  width: 50%;  /* Varje sektion tar upp 50% av bredden */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,35 +16,36 @@
   z-index: 1;
 }
 
-#zoe img {
-  width: 105%;
+#zoe img, #mio img {
+  width: 110%;  /* Gör bilderna bredare än deras sektioner, för att skapa överlappning */
   height: auto;
-  max-height: 50vh;
   object-fit: cover;
-  margin-right: -10vw; /* Trycker in Zoe i dividern */
+}
+
+#zoe img {
+  max-height: 50vh;
+  margin-right: -5%;  /* Skapar en överlappning mellan bilderna */
 }
 
 #mio img {
-  width: 105%;
-  height: 50vh;
-  object-fit: cover;
-  margin-left: -10vw; /* Trycker in Mio i dividern */
+  max-height: 50vh;
+  margin-left: -5%;  /* Skapar en överlappning mellan bilderna */
 }
 
 .divider {
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
-  width: 10%;
-  z-index: 2; /* Blixten ligger överst */
+  width: 5%;  /* Dividern får ta upp en liten bredd (kan justeras efter behov) */
+  z-index: 2;  /* Se till att dividern ligger över bilderna */
   position: relative;
 }
 
 .divider img {
   height: 50vh;
-  max-height: 60vh;
+  width: auto; /* Behåll bildens proportioner */
 }
 
-article{
+article {
   padding: 1vw 3vw;
 }

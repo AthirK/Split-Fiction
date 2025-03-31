@@ -1,0 +1,100 @@
+.about-us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.community, .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.about-menu {
+    background: black;
+    color: white;
+    padding: 4vh;
+    border-radius: 5px;
+}
+
+.about-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 1vh 0;
+}
+
+.highlight {
+    background: yellow;
+    padding: 2px 5px;
+}
+
+.overlay-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.overlay-images img {
+    position: absolute;
+}
+
+.mio-and-zoe {
+    bottom: 0vh;
+    left: 1vw;
+    width: 20vw;
+}
+
+.donut {
+    bottom: 2vh;
+    right: 2vw;
+    width: 25vh;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .video-bg {
+        display: none;
+    }
+    .about-us {
+        background: white;
+        height: auto;
+        padding: 40px 20px;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
