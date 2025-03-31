@@ -12,7 +12,6 @@
 
     /* Adds a background image to the panel. */
     background-image: url('https://cdn.mos.cms.futurecdn.net/8WFviFRyUMjDxGJXeGgGFR-1920-80.jpg.webp');
-    mask-image: linear-gradient(to top, transparent, black 2%, black 98%, transparent);
 
     /* Ensures the background image covers the entire panel. */
     background-size: cover;
@@ -25,6 +24,8 @@
 
     /* Aligns the panels vertically in the center. */
     align-items: center;
+    border-top: .2rem solid rgb(7, 7, 43);
+    border-bottom: .2rem solid rgb(7, 7, 43);
 }
 
 /* Text panel properties */

@@ -25,6 +25,8 @@
 
     /* Aligns the panels vertically in the center. */
     align-items: center;
+
+    border-top: .2rem solid rgb(7, 7, 43);
 }
 
 /* Text panel properties */

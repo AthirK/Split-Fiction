@@ -1,0 +1,61 @@
+.find-us {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/find-us-background-3.png');
+    background-size: cover;
+    z-index:-1;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.find-us-text {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+    font-size: 150%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.find-us-text > div:nth-child(1) {
+    text-align: center;
+    max-width: 40%;
+}
+
+#find-us-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    padding-bottom: 3rem;
+}
+
+#find-us-links ul li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#find-us-links ul li a {
+    text-decoration: none;
+    position:relative;
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#find-us-links ul li a:hover {
+    outline: 2px;
+    border-radius: 8px;
+    scale: 1.1;    
+}

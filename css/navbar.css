@@ -2,9 +2,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.2rem 2rem;
+    padding: 0.5rem 2rem;
     position: fixed;
-    z-index: 1; /* för att få gradient att fungera på hero */
 }
 
 nav > div {
@@ -34,4 +33,11 @@ nav ul li a:hover {
     outline: 2px solid white; /* to be white */
     background-color: transparent;
     border-radius: 8px;
+}
+
+.social-icons {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    margin-right: 12px;
 }
