@@ -1,10 +1,11 @@
 #about-characters {
   display: flex;
-  align-items: flex-start;  /* Gör att bilderna är i linje med toppen */
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   gap: 0;
   position: relative;
+  overflow: hidden; /* Döljer innehåll som sträcker sig utanför sektionen */
 }
 
 #zoe, #mio {
@@ -17,7 +18,7 @@
 }
 
 #zoe img, #mio img {
-  width: 110%;  /* Gör bilderna bredare än deras sektioner, för att skapa överlappning */
+  width: 105%;  /* Gör bilderna något bredare än sina sektioner för att skapa överlappning */
   height: auto;
   object-fit: cover;
 }
@@ -36,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5%;  /* Dividern får ta upp en liten bredd (kan justeras efter behov) */
-  z-index: 2;  /* Se till att dividern ligger över bilderna */
+  width: 5%;  /* Dividern får ta upp en liten bredd */
+  z-index: 2;
   position: relative;
 }
 
