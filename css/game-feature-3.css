@@ -12,7 +12,7 @@
     height: 40rem;
 
     /* Adds a background image to the panel. */
-    background-image: url('https://i0.wp.com/xboxera.com/wp-content/uploads/2025/02/Split-Fiction-1-4.png?ssl=1');
+    background-image: url('/images/Split-Fiction-1-4.png');
 
     /* Ensures the background image covers the entire panel. */
     background-size: cover;
@@ -49,6 +49,10 @@
 
     /* Centers the text inside the panel. */
     text-align: center;
+
+    padding: 2rem;
+
+    font-size: 1.2rem;
 }
 
 /* Image panel properties */

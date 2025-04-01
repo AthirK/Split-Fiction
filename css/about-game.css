@@ -11,7 +11,7 @@
     height: 40rem;
 
     /* Adds a background image to the panel. */
-    background-image: url('https://cdn.mos.cms.futurecdn.net/8WFviFRyUMjDxGJXeGgGFR-1920-80.jpg.webp');
+    background-image: url('/images/8WFviFRyUMjDxGJXeGgGFR-1920-80.png');
 
     /* Ensures the background image covers the entire panel. */
     background-size: cover;
@@ -47,7 +47,11 @@
     border-radius: 0.5rem;
 
     /* Centers the text inside the panel. */
-    text-align: center;
+    text-align:center;
+
+    padding: 2rem;
+
+    font-size: 1.2rem;
 }
 
 /* Image panel properties */

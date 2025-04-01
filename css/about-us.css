@@ -80,9 +80,7 @@
     width: 25vh;
 }
 
-h2{
-    font-size: 4rem;
-}
+
 
 @media (max-width: 768px) {
     .video-bg {

@@ -2,8 +2,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
+    padding: 0.2rem 2rem;
     position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.nav-scrolled {
+    background: linear-gradient(180deg, #00171c, rgba(7,31,36,0.484375) 75.52%, rgba(7,31,36,0));
+    backdrop-filter: blur(22px);
 }
 
 nav > div {
@@ -33,11 +40,4 @@ nav ul li a:hover {
     outline: 2px solid white; /* to be white */
     background-color: transparent;
     border-radius: 8px;
-}
-
-.social-icons {
-    display: inline-flex;
-    align-items: center;
-    color: white;
-    margin-right: 12px;
 }

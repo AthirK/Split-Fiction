@@ -2,5 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    margin-bottom: 1rem;
+    
 }
 
+#cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+}
+
+.cookie-container p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+#accept-cookies {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#accept-cookies:hover {
+    background: #45a049;
+}
