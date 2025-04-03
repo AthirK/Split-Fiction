@@ -4,6 +4,13 @@ nav {
     justify-content: space-between;
     padding: 0.2rem 2rem;
     position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.nav-scrolled {
+    background: linear-gradient(180deg, #00171c, rgba(7,31,36,0.484375) 75.52%, rgba(7,31,36,0));
+    backdrop-filter: blur(22px);
 }
 
 nav > div {

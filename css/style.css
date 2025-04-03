@@ -1,5 +1,46 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    margin-bottom: 1rem;
+    
 }
 
+#cookie-popup {
+    position: fixed;
+    bottom: 0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 2em;
+    text-align: center;
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    border: solid #45a049;
+    border-width: 0.5em;
+    border-radius: 0.5em;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cookie-container p {
+    margin: 1em;
+    font-size: 14px;
+}
+
+#accept-cookies {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#accept-cookies:hover {
+    background: #45a049;
+}

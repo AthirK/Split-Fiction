@@ -1,10 +1,11 @@
-#about-characters {
+.about-characters {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   gap: 0;
   position: relative;
+  overflow: hidden;
 }
 
 #zoe, #mio {
@@ -16,35 +17,36 @@
   z-index: 1;
 }
 
-#zoe img {
-  width: 105%;
+#zoe img, #mio img {
+  width: 105%; 
   height: auto;
-  max-height: 50vh;
   object-fit: cover;
-  margin-right: -10vw; /* Trycker in Zoe i dividern */
+}
+
+#zoe img {
+  max-height: 50vh;
+  margin-right: -5%; 
 }
 
 #mio img {
-  width: 105%;
-  height: 50vh;
-  object-fit: cover;
-  margin-left: -10vw; /* Trycker in Mio i dividern */
+  max-height: 50vh;
+  margin-left: -5%; 
 }
 
 .divider {
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
-  width: 10%;
-  z-index: 2; /* Blixten ligger överst */
+  width: 5%; 
+  z-index: 2;
   position: relative;
 }
 
 .divider img {
   height: 50vh;
-  max-height: 60vh;
+  width: auto;
 }
 
-article{
+article {
   padding: 1vw 3vw;
 }

@@ -1,9 +1,10 @@
 .hero-section {
     display: flex;
-    direction: row;
+   flex-direction: row;
     background-image: url('/images/hero-background.png');
     background-size: cover;
     min-height: 80vh;
+    z-index: 1;
     }
 
 .hero-left {
@@ -39,8 +40,7 @@
 
 #mini-intro {
     color:azure;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 120%;
+    font-size: 1.5rem;
     max-width: 50%;
     margin-right: auto;
     margin-left: 10rem;
@@ -68,7 +68,7 @@
 }
 
 .reviews {
-    color:white;
+    color:azure;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 150%;
     width:100%;

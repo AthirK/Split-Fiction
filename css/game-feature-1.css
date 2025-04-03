@@ -12,7 +12,7 @@
     height: 40rem;
 
     /* Adds a background image to the panel. */
-    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/02/split-fiction-hands-on-preview-feb-2025.jpg?q=49&fit=crop&w=1140&h=&dpr=2');
+    background-image: url('/images/split-fiction-hands-on-preview-feb-2025.png');
 
     /* Ensures the background image covers the entire panel. */
     background-size: cover;
@@ -25,6 +25,8 @@
 
     /* Aligns the panels vertically in the center. */
     align-items: center;
+
+    border-top: .2rem solid rgb(7, 7, 43);
 }
 
 /* Text panel properties */
@@ -47,6 +49,10 @@
 
     /* Centers the text inside the panel. */
     text-align: center;
+
+    padding: 2rem;
+
+    font-size: 1.2rem;
 }
 
 /* Image panel properties */

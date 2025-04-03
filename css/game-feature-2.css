@@ -25,6 +25,9 @@
 
     /* Aligns the panels vertically in the center. */
     align-items: center;
+
+    border-top: .2rem solid rgb(7, 7, 43);
+    border-bottom: .2rem solid rgb(7, 7, 43);
 }
 
 /* Text panel properties */
@@ -47,6 +50,10 @@
 
     /* Centers the text inside the panel. */
     text-align: center;
+
+    padding: 2rem;
+
+    font-size: 1.2rem;
 }
 
 /* Image panel properties */
