@@ -1,9 +1,10 @@
 footer {
-    background-color: #0e2529; /* Alt. transparent
+    background-color: #10102b; /* Alt. transparent
     Mörkare transparant navbar? */
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: relative;
   }
   
   .footer-container {
@@ -42,6 +43,29 @@ footer {
     outline: 2px solid white;
     background-color: transparent;
     border-radius: 8px;
+  }
+
+  .footer-logos {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logos a {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .footer-logos img {
+    height: 35px;
+    width: auto;
+    opacity: 0.5;
+  }
+
+  .footer-logos a:nth-child(2) img {
+    height: 50px;
   }
   
   .footer-links {
