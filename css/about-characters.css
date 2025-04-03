@@ -8,6 +8,7 @@
   overflow: hidden;
 }
 
+
 #zoe, #mio {
   width: 50%;
   display: flex;
@@ -20,16 +21,15 @@
 #zoe img, #mio img {
   width: 105%; 
   height: auto;
-  object-fit: cover;
-}
-
-#zoe img {
-  max-height: 50vh;
-  margin-right: -5%; 
 }
 
 #mio img {
-  max-height: 50vh;
+  height: 50vh;
+  margin-right: -5%;
+}
+
+#zoe img {
+  height: 50vh;
   margin-left: -5%; 
 }
 
@@ -47,6 +47,54 @@
   width: auto;
 }
 
+.character-text {
+  height: 60vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  width: 60%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
 article {
-  padding: 1vw 3vw;
+  padding: 1em;
+}
+
+article p {
+  margin-bottom: 1em;
+  margin-top: 0;
+  text-align: justify;
+}
+
+@media (max-width: 105rem) { 
+  article p:nth-child(2) {
+    display: none;
+  }
+ }
+
+
+@media (max-width: 60rem) { 
+ #zoe img, #mio img
+  {
+    width: 100%;
+      flex-direction: row;
+      height: auto;
+      margin: 0;
+
+  }
+  .divider{
+    display: none;
+  }
+
+  .character-text{
+  height: auto;
+  }
+
+  article p{
+    display: none;
+  }
 }
