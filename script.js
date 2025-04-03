@@ -1,83 +1,71 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Main navigation scroll effect
-    const mainNavbar = document.querySelector("nav");
-    function checkMainNavbarScroll() {
-        if (window.scrollY > 50) {
-            mainNavbar.classList.add("nav-scrolled");
-        } else {
-            mainNavbar.classList.remove("nav-scrolled");
-        }
-    }
-    window.addEventListener("scroll", checkMainNavbarScroll);
-    checkMainNavbarScroll(); // Add event-listener
+document.addEventListener("DOMContentLoaded", function() {
+    // Scroll to top on load
+    window.scrollTo(0, 0);
 
-    // Sektion-navigation (circles)
-    const sectionNav = document.querySelector("#section-nav");
-    const sectionLinks = document.querySelectorAll("#section-nav a");
-    const sections = document.querySelectorAll("section");
+    // Main nav scroll effect
+    const nav = document.querySelector("nav");
+    window.addEventListener("scroll", () => {
+        nav.classList.toggle("nav-scrolled", window.scrollY > 50);
+    });
 
-    function updateActiveSection() {
-        let scrollPosition = window.scrollY;
-        let foundActive = false;
+    // Section navigation with IntersectionObserver
+    const navLinks = document.querySelectorAll("#section-nav a");
+    const scrollSections = document.querySelectorAll(".scroll-section");
 
-        sections.forEach((section, index) => {
-            const rect = section.getBoundingClientRect();
-            const sectionTop = window.scrollY + rect.top;
-            const sectionHeight = section.clientHeight;
-
-            if (scrollPosition >= sectionTop - sectionHeight / 3 &&
-                scrollPosition < sectionTop + sectionHeight / 3) {
-                sectionLinks.forEach(link => link.style.backgroundColor = "transparent");
-                sectionLinks[index].style.backgroundColor = "white";
-                foundActive = true;
+    // IntersectionObserver setup
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionClass = entry.target.classList[0];
+                navLinks.forEach(link => {
+                    const linkClass = link.getAttribute("href").substring(1);
+                    link.classList.toggle("active", linkClass === sectionClass);
+                });
             }
         });
+    }, { threshold: 0.5 }); // Trigger when 50% of section is visible
 
-        // Fallback position
-        if (!foundActive) {
-            sectionLinks.forEach(link => link.style.backgroundColor = "transparent");
-            sectionLinks[0].style.backgroundColor = "white";
-        }
-    }
+    // Observe "sections"
+    scrollSections.forEach(section => {
+        observer.observe(section);
+    });
 
-    window.addEventListener("scroll", updateActiveSection);
-    updateActiveSection();
-
-    // Smooth scrolling after click
-    sectionLinks.forEach((link, index) => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            sections[index].scrollIntoView({ behavior: "smooth" });
+    // Smooth scroll on click
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetClass = link.getAttribute("href").substring(1);
+            const targetSection = document.querySelector(`.${targetClass}`);
+            if (targetSection) {
+                targetSection.scrollIntoView({ 
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
         });
     });
 
-    // Extra control for Video restart
+    // Video control (looping)
     const video = document.querySelector('.video-bg');
     if (video) {
-        video.addEventListener('ended', function () {
+        video.addEventListener('ended', function() {
             video.currentTime = 0;
-            video.play();
+            video.play().catch(e => console.log("Video play error:", e));
         });
     }
 
-    // Fake cookie-popup
+    // Simple cookie popup
     const cookiePopup = document.createElement("div");
     cookiePopup.id = "cookie-popup";
     cookiePopup.innerHTML = `
         <div class="cookie-container">
-            <p>We use cookies to improve your experience. By continuing to browse, you consent to our use of cookies.</p>
+            <p>We use cookies to improve your experience.</p>
             <button id="accept-cookies">Accept</button>
         </div>
     `;
     document.body.appendChild(cookiePopup);
 
-    document.getElementById("accept-cookies").addEventListener("click", function () {
-        localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("accept-cookies").addEventListener("click", function() {
         cookiePopup.style.display = "none";
     });
-
-    /* Check if cookies have been accepted and hide the popup if so.
-    if (localStorage.getItem("cookiesAccepted") === "true") {
-        cookiePopup.style.display = "none";
-    } */
 });

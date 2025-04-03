@@ -27,7 +27,7 @@
           </a>
           <ul>
             <li>
-              <a href="#">NEWS</a> <!--Eventuellt lägga in fönster som öppnas (som age of water)-->
+              <a href="#">NEWS</a>
             </li>
             <li>
               <a href="#">ABOUT</a>
@@ -57,13 +57,17 @@
     </header>
 
     <nav id="section-nav"> <!--Sections ska ändras)-->
-      <a href="#hero-section"></a>
-      <a href="#aboutGame"></a>
-      <a href="#zoe"></a>
-      <a href="#mio"></a>
+      <a href="#hero-section"></a> 
+      <a href="#aboutGame-panel"></a>
+      <a href="#about-characters"></a>
+      <a href="#gameFeature1-panel"></a>
+      <a href="#gameFeature2-panel"></a>
+      <a href="#gameFeature3-panel"></a>
+      <a href="#find-us"></a>
     </nav>
+
     <!--Hero-->
-    <section class="hero-section">
+    <section class="hero-section scroll-section">
       <div class="hero-left">
         <div>
           <img id="img-logo" src="/images/Split Fiction - SteamGridDB.png" alt="Logo">
@@ -85,7 +89,7 @@
     </section>
     <main>
         <!-- about game (Main panel) /-->
-        <div class="aboutGame-panel">
+        <div class="aboutGame-panel scroll-section">
 
           <!-- Panel with title and text /-->
           <div class="text-panel">
@@ -108,8 +112,8 @@
         </div>
 
       <!-- about zoe/mio /-->
-      <div id="about-characters">
-        <section id="zoe">
+      <section class="about-characters scroll-section">
+        <div id="zoe">
           <img src="https://live.staticflickr.com/65535/54311386906_6e62acf8e7_h.jpg" alt="Zoe Foster">
           <h2>Zoe Foster</h2>
           <h3>About Zoe Foster - Fantasy Author</h3>
@@ -117,11 +121,11 @@
           <article>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mauris tortor, sollicitudin sit amet nibh ac, imperdiet pretium est. Mauris sed risus eu magna egestas iaculis non quis dui. Sed augue turpis, tempus a metus a, venenatis porta turpis. Proin leo est, viverra eu molestie sed, semper a lacus. Pellentesque scelerisque pellentesque placerat. Mauris gravida tempor volutpat. Donec ut efficitur magna. Mauris nec mauris quis lorem bibendum ultricies. Pellentesque vel dui arcu. Nam elementum egestas mauris, quis porta felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eget odio vitae est rutrum tincidunt sit amet vel odio.
           </article>
-        </section>
-        <section class="divider">
+        </div>
+        <div class="divider">
           <img src="https://freepngclipart.com/download/line/53361-lightning-thor-free-photo-png.png">
-        </section>
-        <section id="mio">
+        </div>
+        <divn id="mio">
           <img src="https://live.staticflickr.com/65535/54311615089_99974e7010_h.jpg" alt="Mio Hudson">
           <h2>Mio Hudson</h2>
           <h3>Science Fiction author</h3>
@@ -129,11 +133,11 @@
           <article>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mauris tortor, sollicitudin sit amet nibh ac, imperdiet pretium est. Mauris sed risus eu magna egestas iaculis non quis dui. Sed augue turpis, tempus a metus a, venenatis porta turpis. Proin leo est, viverra eu molestie sed, semper a lacus. Pellentesque scelerisque pellentesque placerat. Mauris gravida tempor volutpat. Donec ut efficitur magna. Mauris nec mauris quis lorem bibendum ultricies. Pellentesque vel dui arcu. Nam elementum egestas mauris, quis porta felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eget odio vitae est rutrum tincidunt sit amet vel odio.
           </article>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- Game feature 1 (Main panel) /-->
-      <div class="gameFeature1-panel">
+      <div class="gameFeature1-panel scroll-section">
 
         <!-- Panel with title and text /-->
         <div class="text-panel">
@@ -154,7 +158,7 @@
       </div>
 
       <!-- Game feature 2 (Main panel) /-->
-      <div class="gameFeature2-panel">
+      <div class="gameFeature2-panel scroll-section">
         
         <!-- Image pane /-->
         <div class="image-panel">
@@ -177,7 +181,7 @@
       </div>
 
       <!-- Game feature 3 (Main panel) /-->
-      <div class="gameFeature3-panel">
+      <div class="gameFeature3-panel scroll-section">
         
         <!-- Panel with title and text /-->
         <div class="text-panel">
@@ -200,7 +204,7 @@
       </div>
 
       <!-- Find us -->
-      <section class="find-us">
+      <section class="find-us scroll-section">
         <div class="find-us-text">
           <div>Jump into mind-blowing moments as you experience the many worlds of Split Fiction, a boundary-pushing co-op adventure from the studio behind It Takes Two. Play together with couch co-op or remotely with Friend's Pass.</div>
         </div>
@@ -306,7 +310,7 @@
 </div>
 
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer-container">
       <div class="community-header">
         <h3>JOIN OUR COMMUNITY</h3>

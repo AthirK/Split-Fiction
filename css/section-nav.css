@@ -26,3 +26,19 @@
 #section-nav a:hover {
   transform: scale(1.3);
 }
+
+#section-nav {
+  pointer-events: auto;
+}
+
+#section-nav a:hover {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+#section-nav a.active {
+  background: white !important;
+}
+
+#section-nav a:focus {
+  outline: none;
+}
