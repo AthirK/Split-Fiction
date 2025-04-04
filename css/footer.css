@@ -1,68 +1,92 @@
 footer {
-    background-color: #0e2529; /* Alt. transparent
-    Mörkare transparant navbar? */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+  background-color: #10102b; /* Alt. transparent
+  Mörkare transparant navbar? */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
 
-  .community-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 80px;
-  }
-  
-  footer h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 20px;
-  }
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  .social-icon {
-    display: inline-flex;
-    align-items: center;
-    color: white;
-    margin-right: 12px;
-  }
+.community-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
 
-  .social-icon svg {
-    fill: white;
-  }
+footer h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 20px;
+}
 
-  .social-icon:hover svg {
-    outline: 2px solid white;
-    background-color: transparent;
-    border-radius: 8px;
-  }
-  
-  .footer-links {
-    margin-bottom: 15px;
-  }
-  
-  .footer-links a {
-    color: hsl(0, 0%, 60%);
-    margin: 0 10px;
-    text-decoration: underline;
-    font-size: 14px;
-    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: none;
-  }
-  
-  .copyright {
-    font-size: 12px;
-    color: hsl(0, 0%, 60%);
-    margin-bottom: 0;
-    font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
-  }
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  margin-right: 12px;
+}
+
+.social-icon svg {
+  fill: white;
+}
+
+.social-icon:hover svg {
+  outline: 2px solid white;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.footer-logos {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logos a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-logos img {
+  height: 35px;
+  width: auto;
+  opacity: 0.5;
+}
+
+.footer-logos a:nth-child(2) img {
+  height: 50px;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: hsl(0, 0%, 60%);
+  margin: 0 10px;
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
+  color: hsl(0, 0%, 60%);
+  margin-bottom: 0;
+  font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+}

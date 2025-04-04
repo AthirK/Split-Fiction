@@ -47,11 +47,17 @@
     border-radius: 0.5rem;
 
     /* Centers the text inside the panel. */
-    text-align:center;
+    text-align: justify;
 
     padding: 2rem;
 
     font-size: 1.2rem;
+
+}
+
+.text-panel p
+{
+    text-align: justify;
 }
 
 /* Image panel properties */

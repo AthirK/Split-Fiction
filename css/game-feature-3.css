@@ -29,6 +29,11 @@
     border-bottom: .2rem solid rgb(7, 7, 43);
 }
 
+.text-panel p
+{
+    text-align: justify;
+}
+
 /* Text panel properties */
 .text-panel
 {
